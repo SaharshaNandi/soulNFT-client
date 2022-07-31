@@ -1,0 +1,156 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  } */
+  
+  .container2 {
+    font-family: 'Lobster', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    margin: 0;
+    background-image: url("../public/undefined_Imgur.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; */
+    width: 40%;
+    overflow: auto;
+    min-height: 300px; 
+    padding: 3rem 3rem 1rem 3rem;
+    
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 13px;
+  
+    font-size: 130%;
+
+    font-weight: bold;
+    color: #CEE5D0
+
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 160%;
+  }
+  
+  .btn {
+    width: 100%;
+    display: block;
+    background: #76BA99;
+    color: white;
+    border: 1px solid rgb(11, 69, 0);
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 100%;
+    font-family: inherit;
+    transition: 0.1s ease-in-out;
+    border-radius: 25px;
+  }
+  
+  .btn:hover {
+    background-color: #ADCF9F;
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
+  .btn:active {
+    transform: scale(1.02);
+  }
+  
+  /* .btn_block {
+    display: block;
+    width: 100%;
+  } */
+  
+  /* .add-form {
+    margin-bottom: 40px;
+  } */
+  
+  .login_control {
+    margin: 0.7em 0;
+  }
+  
+  .login_control label {
+    display: block;
+  }
+  
+  .login_control input {
+    font-weight: normal;
+    width: 100%;
+    height: 40px;
+    color: rgb(70, 70, 70);
+    padding: 3px 7px;
+    font-size: 20px;
+    border-radius: 6px;
+    border: none;
+  }
+  
+  .login_control_check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  } 
+  
+  .login_control_check label {
+    margin: 0.7rem;
+    font-weight: normal;
+    color: #CEE5D0;
+  }  
+  .login_control_check input {
+    height: 20px;
+  } 
+  
+  @media(max-width:650px){
+    .container{
+      width: 90%;
+      font-size: 95%;
+      padding: 1rem;
+    }
+    .container2 {
+      background-image: url("../public/original.gif");
+    }
+
+    .header{
+      font-size: 150%;
+      margin-bottom: 10px;
+    }
+    .btn {
+      font-size: 95%;
+      padding: 8px;
+      margin-top: 20px;
+    }
+    .login_control input {
+      font-size: 14px;
+    }
+    .login_control_check {
+      font-size: 14px;
+    }
+    .login_control_check label {
+      color: white;
+    }
+  }
+
+
+
+  

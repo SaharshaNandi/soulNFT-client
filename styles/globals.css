@@ -1,0 +1,90 @@
+.bg-color-base {
+  background: #f0f0f0;
+}
+
+.bg-gradient-moving {
+  background: linear-gradient(-45deg, 
+  #fff1ed, #ffeff5, #e7f5f9, #eefcf8 
+  );
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+}
+
+.card-pop-out {
+  background: #f0f0f3;
+  box-shadow: -10px -10px 30px #ffffff, 10px 10px 30px rgba(174, 174, 192, 0.4);
+  border-radius: 8px;
+}
+
+.card-pop-out-2 {
+  box-shadow: -10px -10px 30px #ffffff, 10px 10px 30px rgba(174, 174, 192, 0.4);
+  border-radius: 8px;
+}
+
+.card-pop-in {
+  background: #f0f0f3;
+  box-shadow: inset -4px -4px 9px rgba(255, 255, 255, 0.6), inset 4px 4px 14px #C5D7EE;
+  border-radius: 8px;
+}
+
+.button-pop-out {
+  background: #f0f0f3;
+  box-shadow: 2px 2px 4px rgba(114, 142, 171, 0.1), -6px -6px 20px #ffffff, 4px 4px 20px rgba(111, 140, 176, 0.41);
+  border-radius: 8px;
+}
+
+.button-pop-out-2 {
+  background: #f0f0f3;
+  box-shadow: -2px -2px 4px #ffffff, 10px 10px 30px rgba(174, 174, 192, 0.4);
+  border-radius: 8px;
+}
+
+.button-pop-in {
+  background: #f0f0f3;
+  box-shadow: inset 5px 5px 4px rgba(174, 174, 192, 0.2), inset -5px -5px 4px rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.button-type-1 {
+  /* background: linear-gradient(270deg, rgb(244, 170, 178)  0%, rgb(253, 225, 112) 50%, rgb(155, 200, 255) 100%); */
+  background: linear-gradient(270deg, #5081FF 0%, #745FF2 100%);
+  box-shadow: 2px 2px 4px rgba(114, 142, 171, 0.1), -6px -6px 20px #ffffff, 4px 4px 20px rgba(111, 140, 176, 0.41);
+  border-radius: 8px;
+}
+
+.animation-linear {
+  animation: animate 2s infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+@keyframes gradientBG {
+  0% {
+  background-position: 0% 50%;
+  }
+  50% {
+  background-position: 100% 50%;
+  }
+  100% {
+  background-position: 0% 50%;
+  }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Play&family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Play&family=Space+Mono&family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Fredericka+the+Great&family=Play&family=Space+Mono&family=Teko:wght@300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+

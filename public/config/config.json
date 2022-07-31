@@ -1,0 +1,16 @@
+{
+  "CONTRACT_ADDRESS": "0xeFa89F007574fAcB29a1c53CB70C1d9F0263BB8e",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0xefa89f007574facb29a1c53cb70c1d9f0263bb8e",
+  "NETWORK": {
+    "NAME": "Rinkeby",
+    "SYMBOL": "ETH",
+    "ID": 4
+  },
+  "NFT_NAME": "WarrantyNFT",
+  "SYMBOL": "WNFT",
+  "MAX_SUPPLY": "Unlimited",
+  "GAS_LIMIT": 5000000,
+  "MARKETPLACE": "Opensea",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/warrantynft-8vnneudy5n",
+  "SHOW_BACKGROUND": true
+}
