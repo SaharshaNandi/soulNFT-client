@@ -1,8 +1,27 @@
+# TEAM INFORMATION
+
+#### St. Thomas' College of Engineering and Technology (Kolkata)
+#### Team Name: BugBytes
+
+| COLLEGE ROLL NO. | NAME                        |
+|------------------|-----------------------------|
+| 62               | ARCHISMAN ROY (TEAM LEADER) |
+| 52               | SAHARSHA NANDI              |
+| 42               | NABARUN KAR                 |
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
