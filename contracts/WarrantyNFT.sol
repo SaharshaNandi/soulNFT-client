@@ -32,7 +32,6 @@ contract WarrantyNFT is ERC721, ERC721URIStorage, Ownable {
 
     constructor() ERC721("WarrantyNFT", "WNFT") {
         interval = 16743307675; // extreme date -> Thursday, 29 July 2500 6:47:55 AM or 531 years
-        // lastTimeStamp = block.timestamp;
         mintedTokens = 0;
         tracker = 0;
     }
