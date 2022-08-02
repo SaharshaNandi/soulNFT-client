@@ -1,6 +1,6 @@
 {
-  "CONTRACT_ADDRESS": "0x783E3c3E9ECe450a0227Ff5e739fBbe5E1e490dF",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x783e3c3e9ece450a0227ff5e739fbbe5e1e490df",
+  "CONTRACT_ADDRESS": "0x23012b9928162c97469052d0cc4708286FB28e30",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x23012b9928162c97469052d0cc4708286fb28e30",
   "NETWORK": {
     "NAME": "Rinkeby",
     "SYMBOL": "ETH",
@@ -11,6 +11,6 @@
   "MAX_SUPPLY": "Unlimited",
   "GAS_LIMIT": 5000000,
   "MARKETPLACE": "Opensea",
-  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/warrantynft-8vnneudy5n",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/warrantynft-1ew74v2vmr",
   "SHOW_BACKGROUND": true
 }
