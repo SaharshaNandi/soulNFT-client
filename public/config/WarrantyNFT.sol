@@ -11,8 +11,8 @@ contract WarrantyNFT is ERC721, ERC721URIStorage, Ownable {
 
     Counters.Counter private _tokenIdCounter;
 
-    // Metadata information for each stage of the NFT on IPFS.
-    string[] IpfsUri = [
+    // Metadata information for each stage of the NFT
+    string[] dynamicURI = [
         "https://raw.githubusercontent.com/NabarunKar/dNFT-metadata/main/1.json",
         "https://raw.githubusercontent.com/NabarunKar/dNFT-metadata/main/2.json",
         "https://raw.githubusercontent.com/NabarunKar/dNFT-metadata/main/3.json"
@@ -35,11 +35,8 @@ contract WarrantyNFT is ERC721, ERC721URIStorage, Ownable {
 
     constructor() ERC721("WarrantyNFT", "WNFT") {
         interval = 16743307675; // extreme date -> Thursday, 29 July 2500 6:47:55 AM or 531 years
-        // lastTimeStamp = block.timestamp;
         mintedTokens = 0;
         tracker = 0;
-        // expiredTokens = 0;
-        // first = true;
     }
 
     function getCurrentTimeStamp() public view returns(uint256) {
@@ -58,7 +55,7 @@ contract WarrantyNFT is ERC721, ERC721URIStorage, Ownable {
         for(uint j=0; j<ids.length; j++) {
             if((currentTimeStamp-lastTimeStampList[ids[j]])>=intervalList[ids[j]]) {
                     expireNFT(ids[j]);
-                    remove(ids[j]);
+                    remove(j);
                 }
             }
         return 0;
@@ -69,15 +66,12 @@ contract WarrantyNFT is ERC721, ERC721URIStorage, Ownable {
         lastTimeStamp = block.timestamp;
         interval = _interval;
 
-        // lastTimeStampList.push(lastTimeStamp);
-        // intervalList.push(interval);
-
         for(uint i = 0; i<quantity; i++) {
             uint256 tokenId = _tokenIdCounter.current();
             _tokenIdCounter.increment();
             _safeMint(to, tokenId);
             // exists[tokenId] = true;
-            _setTokenURI(tokenId, IpfsUri[0]);
+            _setTokenURI(tokenId, dynamicURI[0]);
             lastTimeStampList.push(lastTimeStamp);
             intervalList.push(interval);
             ids.push(tokenId);
@@ -92,27 +86,20 @@ contract WarrantyNFT is ERC721, ERC721URIStorage, Ownable {
         if (warrantyState(_tokenId) >= 2) {
             return;
         }
-        // Get the current stage of the flower and add 1
         uint256 newVal = warrantyState(_tokenId) + 1;
-        // store the new URI
-        string memory newUri = IpfsUri[newVal];
-        // Update the URI
+        string memory newUri = dynamicURI[newVal];
         _setTokenURI(_tokenId, newUri);
-        // exists[_tokenId] = false;
     }
 
-    // determine the stage of the flower growth
+    // determine the stage of the warranty
     function warrantyState(uint256 _tokenId) public view returns (uint256) {
         string memory _uri = tokenURI(_tokenId);
-        // Seed
-        if (compareStrings(_uri, IpfsUri[0])) {
+        if (compareStrings(_uri, dynamicURI[0])) {
             return 0;
         }
-        // Sprout
-        if (compareStrings(_uri, IpfsUri[1])) {
+        if (compareStrings(_uri, dynamicURI[1])) {
             return 1;
         }
-        // // Must be a Bloom
         return 2;
     }
 
