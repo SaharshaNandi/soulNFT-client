@@ -11,7 +11,7 @@
 
 ## Demo
 
-![Login](https://user-images.githubusercontent.com/60267353/182618652-5dafd5c0-1892-4bec-9753-d863fc637558.JPG)
+![Login](https://raw.githubusercontent.com/NabarunKar/dNFT-metadata/main/demo.png)
 
 ## Getting Started
 
