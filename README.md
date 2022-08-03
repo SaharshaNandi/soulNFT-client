@@ -1,3 +1,8 @@
+# Mail Id and Password
+
+#### Mail Id: [soulnftofficial@mail.com]
+#### Password: [flipgrid2022]
+
 # TEAM INFORMATION
 
 #### St. Thomas' College of Engineering and Technology (Kolkata)

@@ -27,6 +27,12 @@ function Login() {
           name : 'Naba',
           e_mail : 'nothing@mail.com',
           password : 'God',
+        },
+        {
+          id : 'soul',
+          name : 'Soulnft',
+          e_mail : 'soulnftofficial@mail.com',
+          password : 'flipgrid2022',
         }
       ])
     
