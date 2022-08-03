@@ -36,7 +36,7 @@ function logOut(){
 }
   
   return (
-    <div className='grid py-1 px-1.5 md:py-3 md:px-8 bg-transparent h-fit sticky top-0 z-10'>
+    <div className='grid py-1 px-1.5 md:py-3 md:px-8 bg-gray-900 bg-opacity-95 backdrop-blur-sm h-fit sticky top-0 z-10'>
       <div className="flex justify-between">
         <div className="flex ml-0 md:ml-2 justify-center hover:cursor-pointer">
           <img className="h-10 md:h-12" src="https://www.finder.com.au/finder-au/wp-uploads/2020/11/AAVELogo_Supplied_250x250.png" alt="Main_Icon" />
