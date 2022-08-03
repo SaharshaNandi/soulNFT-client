@@ -10,7 +10,7 @@
 | 42               | NABARUN KAR                 |
 
 # ABOUT
-Our [deployment](https://soulnft.vercel.app/) lets users create a dynamic NFT which will expire after a period of time specified by the user. Users will need to have [Metamask Wallet](https://metamask.io/download/) installed in their browsers to pay for gas fees assosciated with the transactions. All deployments are on [Ethereum Rinkeby Testnet](https://rinkeby.etherscan.io/) at this point of time and users must switch the network in their Metamask wallets before interacting with the website.
+Our [deployment](https://soulnft.vercel.app/) lets users create a dynamic NFT which will expire after a period of time specified by the user. Users will need to have [Metamask Wallet](https://metamask.io/download/) installed in their browsers to pay for gas fees assosciated with the transactions. All deployments are on [Ethereum Rinkeby Testnet](https://rinkeby.etherscan.io/) at this point of time and users must switch the network in their Metamask wallets before interacting with the website. Credentials for testing:- login id: roy@gmail.com, password: marcelom12
 
 ## Demo
 
