@@ -38,8 +38,8 @@ const Home: NextPage = () => {
   const [nftNumber, setNftNumber] = useState(1);
   const [nftAddress, setNftAddress] = useState('');
   const [warrantyMonths, setWarrantyMonths] = useState(12);
-  const [loyaltyMonths, setLoyaltyMonths] = useState(4);
-  const [loyaltyPoints, setLoyaltyPoints] = useState(2);
+  //const [loyaltyMonths, setLoyaltyMonths] = useState(4);
+  //const [loyaltyPoints, setLoyaltyPoints] = useState(2);
   const [showModal, setShowModal] = useState(false);
   {/*const [discountPercentage, setDiscountPercentage] = useState(10);*/}
 
@@ -75,9 +75,10 @@ const Home: NextPage = () => {
               activeButton === 0 && <Details activeButton={tabButtons[activeButton]} setActiveButton={setActiveButton} itemDescription={itemDescription} setItemDescription={setItemDescription} nftNumber={nftNumber} setNftNumber={setNftNumber} nftAddress={nftAddress} setNftAddress={setNftAddress} />
             }
             {
-              activeButton === 1 && <Warranty activeButton={tabButtons[activeButton]} setActiveButton={setActiveButton} itemDescription={itemDescription} setItemDescription={setItemDescription} warrantyMonths={warrantyMonths} setWarrantyMonths={setWarrantyMonths} loyaltyMonths={loyaltyMonths} setLoyaltyMonths={setLoyaltyMonths} loyaltyPoints={loyaltyPoints} setLoyaltyPoints={setLoyaltyPoints}
+              activeButton === 1 && <Warranty activeButton={tabButtons[activeButton]} setActiveButton={setActiveButton} itemDescription={itemDescription} setItemDescription={setItemDescription} warrantyMonths={warrantyMonths} setWarrantyMonths={setWarrantyMonths}
               nftNumber={nftNumber} setNftNumber={setNftNumber} nftAddress={nftAddress} setNftAddress={setNftAddress} />
             }
+            
             {/*[{
               activeButton === 2 && <Loyalty activeButton={tabButtons[activeButton]} setActiveButton={setActiveButton} discountPercentage={discountPercentage} setDiscountPercentage={setDiscountPercentage} itemName={itemName} setItemName={setItemName}/>
             }]*/}

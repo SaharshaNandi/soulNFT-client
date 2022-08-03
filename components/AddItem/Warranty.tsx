@@ -13,10 +13,10 @@ type Props = {
   setItemDescription: Dispatch<SetStateAction<string>>,
   warrantyMonths: number,
   setWarrantyMonths: Dispatch<SetStateAction<number>>,
-  loyaltyMonths: number,
-  setLoyaltyMonths: Dispatch<SetStateAction<number>>,
-  loyaltyPoints: number,
-  setLoyaltyPoints: Dispatch<SetStateAction<number>>,
+  // loyaltyMonths: number,
+  // setLoyaltyMonths: Dispatch<SetStateAction<number>>,
+  // loyaltyPoints: number,
+  // setLoyaltyPoints: Dispatch<SetStateAction<number>>,
   nftNumber: number,
   setNftNumber: Dispatch<SetStateAction<number>>,
   nftAddress: string,
@@ -24,8 +24,7 @@ type Props = {
 }
 
 const Warranty = (props: Props) => {
-  const { activeButton, setActiveButton, itemDescription, setItemDescription, warrantyMonths, setWarrantyMonths, loyaltyMonths, setLoyaltyMonths, loyaltyPoints, setLoyaltyPoints, 
-  nftNumber,setNftNumber,nftAddress,setNftAddress} = props;
+  const { activeButton, setActiveButton, itemDescription, setItemDescription, warrantyMonths, setWarrantyMonths, nftNumber,setNftNumber,nftAddress,setNftAddress} = props;
   // const [provider, setProvider] = useState({})
   // useEffect(() => {
   // }, []);
@@ -33,7 +32,7 @@ const Warranty = (props: Props) => {
 
   if (typeof window.ethereum == 'undefined') {
     Router.push('/metaredirect')
-    return
+    // return
   } 
   // const provider = ((window.ethereum != null) ? new ethers.providers.Web3Provider(window.ethereum): ethers.getDefaultProvider())
 
