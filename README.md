@@ -1,7 +1,7 @@
-# Mail Id and Password
+# User Id and Password for easy access
 
-#### Mail Id: [soulnftofficial@mail.com]
-#### Password: [flipgrid2022]
+#### User Id: soulnftofficial@mail.com
+#### Password: flipgrid2022
 
 # TEAM INFORMATION
 
