@@ -9,10 +9,6 @@
 | 52               | SAHARSHA NANDI              |
 | 42               | NABARUN KAR                 |
 
-## Demo
-
-![Login](https://user-images.githubusercontent.com/60267353/182581355-fd85dc09-04b2-4493-a899-c7ca62ee07a7.JPG)
-
 
 
 ## Getting Started
