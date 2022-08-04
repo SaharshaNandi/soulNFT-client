@@ -4,10 +4,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "check-types": "tsc --noemit",
+    "lint": "npm run check-types && next lint"
   },
   "dependencies": {
     "@metamask/providers": "^9.0.0",
+    "@openzeppelin/contracts": "^4.7.2",
     "dotenv": "^16.0.1",
     "ethers": "^5.6.9",
     "firebase": "^9.9.1",

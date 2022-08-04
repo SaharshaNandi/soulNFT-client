@@ -69,12 +69,12 @@ function Login() {
       <form className={styles.login} onSubmit={onSubmit}>
         <div className={styles.login_control}>
         <label>User ID</label>
-            <input type='text' placeholder='Enter your Username or Email'
+            <input type='text' placeholder='roy@gmail.com'
             value={UserID} onChange={(e)=>setID(e.target.value)}/>
         </div>
         <div className={styles.login_control}>
           <label>Password</label>
-            <input type={Show? 'text':'password'} placeholder='Enter your Password'
+            <input type={Show? 'text':'password'} placeholder='marcelom12'
             value={Password} onChange={(e)=>setPassword(e.target.value)}/>
         </div>
         <input type='submit' value='Login' 
