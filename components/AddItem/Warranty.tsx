@@ -38,7 +38,7 @@ const Warranty = (props: Props) => {
 
     const provider = new ethers.providers.Web3Provider(window.ethereum)
     const signer = provider.getSigner()
-    const contractAddress = '0x23012b9928162c97469052d0cc4708286FB28e30';
+    const contractAddress = '0x525A0294Cc0c9BBEced22fa5beB92c960874696f';
     // get the smart contract
     const contract = new ethers.Contract(contractAddress, WarrantyNFT.abi, signer);
     const mintToken = async () => {

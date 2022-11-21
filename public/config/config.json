@@ -1,16 +1,16 @@
 {
-  "CONTRACT_ADDRESS": "0x23012b9928162c97469052d0cc4708286FB28e30",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x23012b9928162c97469052d0cc4708286fb28e30",
+  "CONTRACT_ADDRESS": "0x525A0294Cc0c9BBEced22fa5beB92c960874696f",
+  "SCAN_LINK": "https://goerli.etherscan.io/address/0x525a0294cc0c9bbeced22fa5beb92c960874696f",
   "NETWORK": {
-    "NAME": "Rinkeby",
-    "SYMBOL": "ETH",
-    "ID": 4
+    "NAME": "Goerli test network",
+    "SYMBOL": "GoerliETH",
+    "ID": 5
   },
   "NFT_NAME": "WarrantyNFT",
   "SYMBOL": "WNFT",
   "MAX_SUPPLY": "Unlimited",
   "GAS_LIMIT": 5000000,
   "MARKETPLACE": "Opensea",
-  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/warrantynft-1ew74v2vmr",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/warrantynft-3erjb9hwir",
   "SHOW_BACKGROUND": true
 }
